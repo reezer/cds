@@ -82,6 +82,9 @@ test-db-start-docker:
 	@sleep 5
 	$(TEST_DB_INIT)
 
+test-db-start-docker-light:
+	$(TEST_DB_START_DOCKER)
+
 test-db-create:
 	$(TEST_DB_CREATE_DATABASE)
 	$(TEST_DB_INIT)
